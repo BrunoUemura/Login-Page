@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>System</title>
+    <link rel="stylesheet" href="../css/mainStyle.css">
+    <script rc="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sidebarBtn').click(function(){
+                $('.sideabr').toggleClass('active');
+            })
+        })
+    </script>
 </head>
 <body>
-    <h1>Hellow World!</h1>
+    <div class="sidebar">
+        <header>My app</header>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Shortcuts</a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="sidebarBtn">
+            <span></span>
+        </button>
+    </div>
 </body>
 </html>

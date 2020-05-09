@@ -1,14 +1,32 @@
-function login(){
-    
+let user = 
+[
+    {
+        "user": "bruno.uemura",
+        "password": "bruno123"
+    },
+
+    {
+        "user": "administrador",
+        "password": "admin123"
+    }
+]
+
+
+    function login(){
     let userName = document.getElementById("user").value;
     let password = document.getElementById("pass").value;
 
-    if(userName === "admin" && password === "admin"){
+
+    if(userName === user[0].user && password === user[0].password ||
+        userName === user[1].user && password === user[1].password
+        ){
         alert("Login Success!");
+        window.open('html/main.html');
     }else{
         alert("Login Failed!");
     }
         
+    
 }
 
 function recover(){
