@@ -43,8 +43,10 @@ function recover(){
             alert("Please, enter a valid e-mail");
         }
         
-    }else{
+    }else if(email !== emailConfirm){
         alert("Please, enter a valid e-mail");
+    }else{
+        alert("Please, enter an e-mail");
     }
         
 }
